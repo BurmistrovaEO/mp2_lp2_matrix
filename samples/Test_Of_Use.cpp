@@ -7,17 +7,20 @@ int main()
 	int size;
 	cout << "Введите размер матрицы: ";
 	cin >> size;
-	TMatrix<int> a(5), b(5), c(5),d(size);
+	TMatrix<int> a(5), b(5), c(5),d(size),e(size);
 	int i, j;
 	cout << "Тестирование программ поддержки представления треугольных матриц" << endl;
 	for (i = 0; i < 5; i++)
 		for (j = i; j < 5; j++)
 		{
 			d[i][j] = i * 10 + j;
+			e[i][j] = (i * 10 + j) * 100;
 		}
 	cout << "Matrix d" << endl << c << endl;
 	d = d * 2;
 	cout << "Matrix d = a * 2" << endl << c << endl;
+	cout << "Matrix e" << endl << e << endl;
+
 
 	cout << "Тестирование программ поддержки представления треугольных матриц" << endl;
 	for (i = 0; i < 5; i++)
